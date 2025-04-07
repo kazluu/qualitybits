@@ -180,12 +180,13 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight [text-wrap:balance] text-neutral-950 sm:text-7xl">
-            Award-winning development studio based in Denmark.
+            Crafting High-Quality Software Systems
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are a development studio working at the intersection of design
-            and technology. It’s a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+            We are software engineers that understand and emphasize the
+            importance of quality and usability in software. So much so
+            that our test cases have test cases, and we're currently testing if
+            that's enough testing.
           </p>
         </FadeIn>
       </Container>
