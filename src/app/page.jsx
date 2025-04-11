@@ -18,6 +18,8 @@ import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
+
+import logoStacerDark from '@/images/clients/stacer/stacer-on-dark.svg'
 import { loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
@@ -29,6 +31,7 @@ const clients = [
   ['Green Life', logoGreenLife],
   ['Bright Path', logoBrightPath],
   ['North Adventures', logoNorthAdventures],
+  ['Stacer', logoStacerDark],
 ]
 
 function Clients() {
@@ -37,7 +40,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            Helping satisfied customers
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -185,8 +188,8 @@ export default async function Home() {
           <p className="mt-6 text-xl text-neutral-600">
             We are software engineers that understand and emphasize the
             importance of quality and usability in software. So much so
-            that our test cases have test cases, and we're currently testing if
-            that's enough testing.
+            that our test cases have test cases, and we&apos;re currently testing if
+            that&apos;s enough testing.
           </p>
         </FadeIn>
       </Container>
