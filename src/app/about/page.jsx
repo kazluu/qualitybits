@@ -196,7 +196,7 @@ export default async function About() {
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
             We got tired of code that’s a dumpster fire, systems that crumble under
-            pressure, and user experiences that don't think about the user. So, we’re on
+            pressure, and user experiences that don’t think about the user. So, we’re on
             a mission to fix that. We build things that work.
           </p>
 
