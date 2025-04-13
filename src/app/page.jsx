@@ -16,10 +16,11 @@ import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
 import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
+import logoStacerDark from '@/images/clients/stacer/stacer-on-dark.svg'
+import logoLSD from '@/images/clients/lsd/logo-lsd.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 
-import logoStacerDark from '@/images/clients/stacer/stacer-on-dark.svg'
 import { loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
@@ -164,7 +165,7 @@ function Services() {
 
 export const metadata = {
   description:
-    'We are a development studio working at the intersection of design and technology.',
+    'We are software engineers that understand and emphasize the importance of quality and usability in software',
 }
 
 export default async function Home() {
@@ -192,11 +193,10 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        client={{ name: 'LSD', logo: logoLSD }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
+        The QualityBits team went above and beyond to find the rough edges in our product.
+        They were able to increase our sells to ??%.
       </Testimonial>
 
       <Services />
