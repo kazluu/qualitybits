@@ -67,16 +67,15 @@ function CaseStudies({ caseStudies }) {
   return (
     <>
       <SectionIntro
-        title="Harnessing technology for a brighter future"
+        title="We don’t hope it works. We know it works."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
+          We’ve replaced wishful thinking with CI pipelines, multi-level test,
+          and mild paranoia.
         </p>
       </SectionIntro>
-      <Container className="mt-16">
+      {/* <Container className="mt-16">
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {caseStudies.map((caseStudy) => (
             <FadeIn key={caseStudy.href} className="flex">
@@ -114,7 +113,7 @@ function CaseStudies({ caseStudies }) {
             </FadeIn>
           ))}
         </FadeInStagger>
-      </Container>
+      </Container> */}
     </>
   )
 }
@@ -124,12 +123,12 @@ function Services() {
     <>
       <SectionIntro
         eyebrow="Services"
-        title="We help you identify, explore and respond to new opportunities."
+        title="We build things that work now, and work later."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
+          Immediate results, long-term reliability. We develop systems that are
+          engineered to handle the next challenge, before it even arrives.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -145,23 +144,16 @@ function Services() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+              We specialise in crafting beautiful, high quality websites.
             </ListItem>
             <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+              From beginng to end, we build custom applications that help you
+              and your business get the job done.
             </ListItem>
-            <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
-            </ListItem>
-            <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+            <ListItem title="Education">
+              Empowering your team with the skills they need to thrive. We provide
+              tailored training and hands-on learning experiences that turn knowledge
+              into action.
             </ListItem>
           </List>
         </div>

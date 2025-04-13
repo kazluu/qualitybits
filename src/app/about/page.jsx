@@ -195,30 +195,18 @@ export default async function About() {
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+            We got tired of code that’s a dumpster fire, systems that crumble under
+            pressure, and user experiences that don't think about the user. So, we’re on
+            a mission to fix that. We build things that work.
           </p>
+
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+            Our team’s obsession with quality and maintainability means we write software
+            that helps you keep your hair out six months later. Simply if your software’s
+            not making your life easier, we’re doing something wrong.
           </p>
         </div>
       </PageIntro>
-      <Container className="mt-16">
-        <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
-        </StatList>
-      </Container>
-
-      <Culture />
-
-      <Team />
 
       <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"

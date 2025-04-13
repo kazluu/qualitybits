@@ -47,7 +47,7 @@ function RadioInput({ label, ...props }) {
 function ContactForm() {
   return (
     <FadeIn className="lg:order-last">
-      <form>
+      <form name="contact" netlify>
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Work inquiries
         </h2>
@@ -89,24 +89,13 @@ function ContactForm() {
 function ContactDetails() {
   return (
     <FadeIn>
-      <h2 className="font-display text-base font-semibold text-neutral-950">
-        Our offices
-      </h2>
-      <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? We don’t but we have to list our
-        addresses here for legal reasons.
-      </p>
-
-      <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
-
-      <Border className="mt-16 pt-16">
+      <div>
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Email us
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ['Careers', 'careers@studioagency.com'],
-            ['Press', 'press@studioagency.com'],
+            ['', 'kazlu@protonmail.com'],
           ].map(([label, email]) => (
             <div key={email}>
               <dt className="font-semibold text-neutral-950">{label}</dt>
@@ -121,7 +110,7 @@ function ContactDetails() {
             </div>
           ))}
         </dl>
-      </Border>
+      </div>
 
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
