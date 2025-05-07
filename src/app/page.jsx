@@ -8,31 +8,15 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoStacerDark from '@/images/clients/stacer/stacer-on-dark.svg'
-import logoLSD from '@/images/clients/lsd/logo-lsd.svg'
-import logoUnseal from '@/images/clients/unseal/logo-light.svg'
+import logoLSD from '@/images/clients/lsd/lsd-on-dark.svg'
 import imageLaptop from '@/images/laptop.jpg'
 
 import { loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
-  ['Phobia', logoPhobiaLight],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
   ['Stacer', logoStacerDark],
+  ['LSD', logoLSD],
 ]
 
 function Clients() {
@@ -165,7 +149,7 @@ function Services() {
 
 export const metadata = {
   description:
-    'We are software engineers that understand and emphasize the importance of quality and usability in software',
+    ' we understand the importance of quality and usability in software',
 }
 
 export default async function Home() {
@@ -179,10 +163,8 @@ export default async function Home() {
             Crafting High-Quality Software Systems
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are software engineers that understand and emphasize the
-            importance of quality and usability in software. So much so
-            that our test cases have test cases, and we&apos;re currently testing if
-            that&apos;s enough testing.
+            We understand the importance of quality and usability in software.
+            Which is why, if we build it for you, it will be built right.
           </p>
         </FadeIn>
       </Container>
