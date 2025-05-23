@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
+import { GridPattern } from '@/components/GridPattern'
 import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
@@ -35,9 +36,14 @@ function Clients() {
             className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
           >
             {clients.map(([client, logo]) => (
-              <li key={client}>
+              <li key={client} className="flex items-center">
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image 
+                    src={logo} 
+                    alt={client} 
+                    unoptimized 
+                    className="h-8 w-auto max-w-full object-contain"
+                  />
                 </FadeIn>
               </li>
             ))}
@@ -50,13 +56,17 @@ function Clients() {
 
 function CaseStudies({ caseStudies }) {
   return (
-    <>
+    <div className="relative isolate bg-neutral-50 py-16 sm:py-28 md:py-32 mt-20">
+      <GridPattern
+        className="absolute inset-0 -z-10 h-full w-full fill-neutral-100 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_50%,transparent_60%)]"
+        yOffset={-256}
+      />
       <SectionIntro
-        title="We don’t hope it works. We know it works."
-        className="mt-24 sm:mt-32 lg:mt-40"
+        title="We don't hope it works. We know it works."
+        className="mt-5 sm:mt-10 lg:mt-15"
       >
         <p>
-          We’ve replaced wishful thinking with CI pipelines, multi-level test,
+          We've replaced wishful thinking with CI pipelines, multi-level test,
           and mild paranoia.
         </p>
       </SectionIntro>
@@ -99,7 +109,7 @@ function CaseStudies({ caseStudies }) {
           ))}
         </FadeInStagger>
       </Container> */}
-    </>
+    </div>
   )
 }
 
@@ -171,17 +181,18 @@ export default async function Home() {
 
       <Clients />
 
-      <CaseStudies caseStudies={caseStudies} />
 
-      <Testimonial
+      {/* <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'LSD', logo: logoLSD }}
       >
         The QualityBits team went above and beyond to find the rough edges in our product.
         They were able to increase our sells to ??%.
-      </Testimonial>
+      </Testimonial> */}
 
       <Services />
+
+      <CaseStudies caseStudies={caseStudies} />
 
       <ContactSection />
     </>
