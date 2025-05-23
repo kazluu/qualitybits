@@ -1,5 +1,7 @@
 # Studio
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2c70e2bc-28dd-48a1-a902-65033487944f/deploy-status)](https://app.netlify.com/projects/chic-duckanoo-f603df/deploys)
+
 Studio is a [Tailwind Plus](https://tailwindcss.com/plus) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
 
 ## Getting started

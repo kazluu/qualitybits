@@ -66,7 +66,7 @@ function CaseStudies({ caseStudies }) {
         className="mt-5 sm:mt-10 lg:mt-15"
       >
         <p>
-          We've replaced wishful thinking with CI pipelines, multi-level test,
+          We&apos;ve replaced wishful thinking with CI pipelines, multi-level test,
           and mild paranoia.
         </p>
       </SectionIntro>
